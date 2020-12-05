@@ -2,7 +2,7 @@ $(function () {
     let edit = false;
     fetchTasks();
     $("#task-result").hide();
-    $('#search').keyup(function () {
+    $('#search-btn').submit(function () {
         if ($("#search").val()) {
             let search = $('#search').val();
             $.ajax({
@@ -57,7 +57,7 @@ $(function () {
                     <tr taskId="${tarea.id}">
                         <td>${tarea.id}</td>
                         <td>
-                            <a href="#" class="task-item">${tarea.nombre}</a>
+                            <a href="#" class="task-item" title="Pulsar para editar">${tarea.nombre}</a>
                         </td>
                         <td>${tarea.descripcion}</td>
                         <td>

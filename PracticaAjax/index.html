@@ -8,15 +8,14 @@
     <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 
-<body>
-    <h1>Aplicacion de Tareas</h1>
+<body>    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a href="#" class="navbar-brand">Task App</a>
+        <a href="#" class="navbar-brand">Aplicacion de Listado de Tareas</a>
         <ul class="navbar-nav ml-auto">
-            <form class="form-inline my-2 my-lg-0">
-                <input type="search" id="search" class="form-control mr-sm-2" placeholder="Search You Task">
+            <form class="form-inline my-2 my-lg-0" id="search-btn">
+                <input type="search" id="search" class="form-control mr-sm-2" placeholder="Buscar Tarea">
                 <button class="btn btn-success my-2 my-sm-0" type="submit">
-                    Search
+                    Buscar
                 </button>
             </form>
         </ul>
@@ -30,10 +29,10 @@
                         <form id="task-form">
                             <input type="hidden" id="taskId">
                             <div class="form-group">
-                                <input type="text" id="name" placeholder="Task Name" class="form-control">
+                                <input type="text" id="name" placeholder="Nombre de Tarea" class="form-control">
                             </div>
                             <div class="form-group">
-                                <textarea id="description" cols="30" rows="10" class="form-control" placeholder="Task Description"></textarea>
+                                <textarea id="description" cols="30" rows="10" class="form-control" placeholder="Descripcion de Tarea"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary btn-block text-center">Enviar</button>
                         </form>
@@ -52,8 +51,8 @@
                     <thead>
                         <tr>
                             <td>Id</td>
-                            <td>Name</td>
-                            <td>Description</td>
+                            <td>Nombre</td>
+                            <td>Descripcion</td>
                         </tr>
                     </thead>
                     <tbody id="tasks">
