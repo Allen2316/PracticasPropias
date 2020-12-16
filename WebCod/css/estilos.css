@@ -1,0 +1,124 @@
+html {
+    box-sizing: border-box;
+    /* 1rem = 10px */
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* Globales */
+
+.contenedor {
+    max-width: 1200px;
+    /* max-width: 120rem; */
+    margin: 0 auto;
+    width: 95%;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Utilidades */
+
+.centrar-texto {
+    text-align: center;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+/* Header */
+
+.site-header {
+    background: url(../imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 60rem;
+}
+
+.site-header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.site-header h1 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.site-header h1 span {
+    font-weight: 700;
+}
+
+/* navegacion */
+
+.barra { 
+    background: rgba(0, 0, 0, 0.7);       
+    align-items: center;
+    text-align: center;
+    padding: 3rem;    
+    display: block;    
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+    }
+}
+
+.barra a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.texto-header {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 15rem;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Main */
+.centro{
+    margin: 2rem;    
+    padding: 3rem;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex: 0 0 100%;
+}
