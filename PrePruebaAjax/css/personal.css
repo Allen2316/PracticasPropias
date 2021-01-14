@@ -1,0 +1,8 @@
+.img-perfil {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.img-perfil:hover {
+    opacity: .5;
+}
